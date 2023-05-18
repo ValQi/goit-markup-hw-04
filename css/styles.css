@@ -1,0 +1,211 @@
+/* Бек цвет #ffffff */
+/* Цвет бека героя #2E2F42 */
+/* Цвет заголовков и списка хедера #2E2F42 */
+/* Цвет обычного текста и адреса   #434455 */
+/* Цвет футера текста и Studio  #F4F4FD */
+/* Цвет героя и кнопки #FFFFFF */
+/* Цвет Web и кнопки #4D5AE5 */
+/* Active text #404BBF */
+/* Боди */
+
+:root {
+  --primary-text-color: #434455;
+  --secondary-color-text: #2e2f42;
+  --background-color: #ffffff;
+  --accent-color: #404bbf;
+  --primary-brand: #4d5ae5;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --secondary-background: #f4f4fd;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: var(--primary-font);
+  letter-spacing: 0.02em;
+}
+
+/* Logo */
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand);
+}
+.nav-logo {
+  color: var(--secondary-color-text)
+}
+/* Nav */
+.nav-menu {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.nav-menu .nav-link:hover,
+.nav-menu .nav-link:focus {
+  color: var(--accent-color);
+}
+.nav-link {
+  color: var(--secondary-color-text);
+}
+.address .address-list {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.address .address-link:hover,
+.address .address-link:focus {
+  color: var(--accent-color);
+}
+.address {
+  font-style: normal;
+}
+.address .address-link {
+  font-size: 16px;
+line-height: 1.5;
+color: var(--primary-text-color);
+}
+/* Links */
+.list {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* Hero Main*/
+.hero-section {
+  background-color: #2e2f42;
+}
+.hero-section .hero-text{
+  color: #ffffff;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.hero-section .hero-buttom {
+  color: #ffffff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.hero-section .hero-buttom:hover,
+.hero-section .hero-buttom:focus {
+  background-color: #404bbf;
+}
+
+/* Button Portfolio*/
+.filters-buttons .button-filter {
+  color: var(--primary-brand);
+  background-color: var(--secondary-background);
+  cursor: pointer;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.button-filter:focus,
+.button-filter:hover {
+  background-color: #404BBF;
+  color: #FFFFFF;
+}
+/* Section */
+.section .features-head {
+  color: var(--secondary-color-text);
+  background-color: var(--fotter-textr);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.features-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.example-title .example-text {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--secondary-color-text);
+}
+/* section team */
+.team-image {
+  background-color: var(--background-color)
+}
+.section-team {
+  background-color:var(--secondary-background) ;
+}
+.section-team .team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--secondary-color-text);
+  background-color: var(--secondary-background)
+}
+.section-team .team-card {
+  background-color: var(--background-color);
+}
+.team-head {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color-text);
+}
+.section-team,
+.team-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.cards-title .cards-head  {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--secondary-color-text)
+
+}
+.cards-title .cards-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--secondary-color-text);
+  color: var(--secondary-background);
+}
+.footer .footer-text {
+  color: var(--secondary-background);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.footer-logo {
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--primary-brand);
+  text-transform: uppercase;
+}
+.footer-logo-web {
+  color: var(--primary-brand);
+  color: var(--secondary-background);
+}
