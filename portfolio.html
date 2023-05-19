@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
@@ -15,32 +16,33 @@
 </head>
 
 <body>
-    <!--Header-->
     <header class="header">
         <!-- Nav -->
-        <nav class="nav">
-            <a class="logo link" href=./index.html>Web<span class="nav-logo">Studio</span></a>
-            <ul class="nav-menu list">
-                <li><a href="./index.html" class="nav-link link">Studio</a></li>
-                <li><a href="./portfolio.html" class="nav-link link">Portfolio</a></li>
-                <li><a href="" class="nav-link link">Contacts</a></li>
-            </ul>
-        </nav>
-        <!-- Address -->
-        <address class="address">
-            <ul class="list">
-                <li>
-                    <a href="mailto:info@devstudio.com" class="address-link link">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a href="tel:+110001111111" class="address-link link">+11 (000) 111-11-11</a>
-                </li>
-            </ul>
-        </address>
+        <div class="container header-all">
+            <nav class="nav header-menu">
+                <a class="logo link" href=./index.html>Web<span class="nav-logo">Studio</span></a>
+                <ul class="nav-menu list">
+                    <li class="item"><a href="./index.html" class="nav-link link">Studio</a></li>
+                    <li class="item"><a href="./portfolio.html" class="nav-link link">Portfolio</a></li>
+                    <li class="item"><a href="" class="nav-link link">Contacts</a></li>
+                </ul>
+            </nav>
+            <!-- Address -->
+            <address class="address header-menu">
+                <ul class="address-list list">
+                    <li class="item">
+                        <a href="mailto:info@devstudio.com" class="address-link link">info@devstudio.com</a>
+                    </li>
+                    <li class="item">
+                        <a href="tel:+110001111111" class="address-link link">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </header>
     <main>
         <!--Filters-->
-        <section>
+        <section class="container">
             <h1 hidden>Filters</h1>
             <ul class="filters-buttons list">
                 <li>
@@ -59,69 +61,79 @@
                     <button type="button" class="button-filter">Marketing</button>
                 </li>
             </ul>
-        <!--Project Cards-->
+            <!--Project Cards-->
             <ul class="cards-title list">
-                <li>
+                <li class="item">
                     <a class="link" href="">
-                    <img src="./images/BankingAppInterfaceConcept.jpg" alt="BankingApp" width="360">
-                    <h2 class="cards-head">Banking App Interface Concept</h2>
-                    <p class="cards-text">App</p></a>
+                        <img src="./images/BankingAppInterfaceConcept.jpg" alt="BankingApp" width="360">
+                        <h2 class="cards-head">Banking App Interface Concept</h2>
+                        <p class="cards-text">App</p>
+                    </a>
                 </li>
                 <li>
                     <a class="link" href="">
-                    <img src="./images/CashlessPayment.jpg" alt="CashlessPayments" width="360">
-                    <h2 class="cards-head">Cashless Payment</h2>
-                    <p class="cards-text">Marketing</p></a>
+                        <img src="./images/CashlessPayment.jpg" alt="CashlessPayments" width="360">
+                        <h2 class="cards-head">Cashless Payment</h2>
+                        <p class="cards-text">Marketing</p>
+                    </a>
                 </li>
                 <li>
                     <a class="link" href="">
-                    <img src="./images/MeditationApp.jpg" alt="MeditationApp" width="360">
-                    <h2 class="cards-head">Meditation App</h2>
-                    <p class="cards-text">App</p></a>
+                        <img src="./images/MeditationApp.jpg" alt="MeditationApp" width="360">
+                        <h2 class="cards-head">Meditation App</h2>
+                        <p class="cards-text">App</p>
+                    </a>
                 </li>
                 <li>
                     <a class="link" href="">
-                    <img src="./images/TaxiService.jpg" alt="TaxiService" width="360">
-                    <h2 class="cards-head">Taxi Service</h2>
-                    <p class="cards-text">Marketing</p></a>
+                        <img src="./images/TaxiService.jpg" alt="TaxiService" width="360">
+                        <h2 class="cards-head">Taxi Service</h2>
+                        <p class="cards-text">Marketing</p>
+                    </a>
                 </li>
                 <li>
                     <a class="link" href="">
-                    <img src="./images/ScreenIllustrations.jpg" alt="IllustrationsScreen" width="360">
-                    <h2 class="cards-head">Screen Illustrations</h2>
-                    <p class="cards-text">Design</p></a>
+                        <img src="./images/ScreenIllustrations.jpg" alt="IllustrationsScreen" width="360">
+                        <h2 class="cards-head">Screen Illustrations</h2>
+                        <p class="cards-text">Design</p>
+                    </a>
                 </li>
                 <li>
                     <a class="link" href="">
-                    <img src="./images/OnlineCourses.jpg" alt="OnlineCourses" width="360">
-                    <h2 class="cards-head">Online Courses</h2>
-                    <p class="cards-text">Marketing</p></a>
+                        <img src="./images/OnlineCourses.jpg" alt="OnlineCourses" width="360">
+                        <h2 class="cards-head">Online Courses</h2>
+                        <p class="cards-text">Marketing</p>
+                    </a>
                 </li>
                 <li>
                     <a class="link" href="">
-                    <img src="./images/InstagramStoriesConcept.jpg" alt="InstagramStoriesDesign" width="360">
-                    <h2 class="cards-head">Instagram Stories Concept</h2>
-                    <p class="cards-text">Design</p></a>
+                        <img src="./images/InstagramStoriesConcept.jpg" alt="InstagramStoriesDesign" width="360">
+                        <h2 class="cards-head">Instagram Stories Concept</h2>
+                        <p class="cards-text">Design</p>
+                    </a>
                 </li>
                 <li>
                     <a class="link" href="">
-                    <img src="./images/OrganicFood.jpg" alt="OrganicFoodWeb" width="360">
-                    <h2 class="cards-head">Organic Food</h2>
-                    <p class="cards-text">Web Site</p></a>
+                        <img src="./images/OrganicFood.jpg" alt="OrganicFoodWeb" width="360">
+                        <h2 class="cards-head">Organic Food</h2>
+                        <p class="cards-text">Web Site</p>
+                    </a>
                 </li>
                 <li>
                     <a class="link" href="">
-                    <img src="./images/FreshCoffee.jpg" alt="CoffeWeb" width="360">
-                    <h2 class="cards-head">Fresh Coffee</h2>
-                    <p class="cards-text">Web Site</p></a>
-                </li>   
+                        <img src="./images/FreshCoffee.jpg" alt="CoffeWeb" width="360">
+                        <h2 class="cards-head">Fresh Coffee</h2>
+                        <p class="cards-text">Web Site</p>
+                    </a>
+                </li>
             </ul>
         </section>
     </main>
     <!-- Footer -->
     <footer class="footer">
         <a class="footer-logo link" href=./index.html>Web<span class="footer-logo-web">Studio</span></a>
-        <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+        <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing &
+            growth solutions.</p>
     </footer>
 </body>
 

@@ -24,7 +24,40 @@ body {
   font-family: var(--primary-font);
   letter-spacing: 0.02em;
 }
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+/* Basic-Stuff */
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+img {
+  display: block;
+}
+/* Header */
+.header-all {
+  display: flex;
+}
 
+.header-menu {
+  display: flex;
+  align-items: center;
+}
 /* Logo */
 .logo {
   font-family: var(--secondary-font);
@@ -33,6 +66,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
   color: var(--primary-brand);
 }
 .nav-logo {
@@ -40,9 +74,20 @@ body {
 }
 /* Nav */
 .nav-menu {
+  display: flex;
+
+  margin-left: 76px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+}
+.nav-menu .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.nav-menu .item:not(:last-child) {
+  margin-right: 40px;
 }
 .nav-menu .nav-link:hover,
 .nav-menu .nav-link:focus {
@@ -51,21 +96,25 @@ body {
 .nav-link {
   color: var(--secondary-color-text);
 }
-.address .address-list {
-  color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.5;
-}
+/* Adress */
 .address .address-link:hover,
 .address .address-link:focus {
   color: var(--accent-color);
 }
 .address {
   font-style: normal;
+  margin-left: auto;
+}
+.address-list {
+  display: flex;
+}
+.address-list .item:not(:last-child) {
+  margin-right: 40px;
 }
 .address .address-link {
-  font-size: 16px;
+font-size: 16px;
 line-height: 1.5;
+
 color: var(--primary-text-color);
 }
 /* Links */
@@ -79,6 +128,7 @@ color: var(--primary-text-color);
 /* Hero Main*/
 .hero-section {
   background-color: #2e2f42;
+  margin-bottom: 120px;
 }
 .hero-section .hero-text{
   color: #ffffff;
@@ -86,6 +136,7 @@ color: var(--primary-text-color);
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  padding-top: 188px;
 }
 .hero-section .hero-buttom {
   color: #ffffff;
@@ -96,6 +147,7 @@ color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  padding: 16px;
 }
 .hero-section .hero-buttom:hover,
 .hero-section .hero-buttom:focus {
@@ -103,6 +155,13 @@ color: var(--primary-text-color);
 }
 
 /* Button Portfolio*/
+.filters-buttons {
+  display: flex;
+  gap: 24px;
+  justify-content:center;
+  margin-top: 96px;
+
+}
 .filters-buttons .button-filter {
   color: var(--primary-brand);
   background-color: var(--secondary-background);
@@ -119,7 +178,10 @@ color: var(--primary-text-color);
   color: #FFFFFF;
 }
 /* Section */
-.section .features-head {
+.section-features {
+  margin-bottom: 120px;
+}
+.section-features .features-head {
   color: var(--secondary-color-text);
   background-color: var(--fotter-textr);
   font-weight: 500;
@@ -131,6 +193,19 @@ color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
 }
+.features-list {
+  display: flex;
+  gap: 24px;
+  
+}
+.features-list .item {
+  flex-wrap: wrap;
+}
+.example-list {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 120px;
+}
 .example-title .example-text {
   font-size: 36px;
   line-height: 1.11;
@@ -138,25 +213,31 @@ color: var(--primary-text-color);
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--secondary-color-text);
+  margin-bottom: 72px;
 }
 /* section team */
 .team-image {
   background-color: var(--background-color)
 }
 .section-team {
-  background-color:var(--secondary-background) ;
+  background-color:var(--secondary-background);
 }
 .section-team .team-title {
+  margin-bottom: 120px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--secondary-color-text);
-  background-color: var(--secondary-background)
+  background-color: var(--secondary-background);
+  
 }
 .section-team .team-card {
   background-color: var(--background-color);
+  display: flex;
+  gap: 24px;
+  margin-bottom: 120px;
 }
 .team-head {
   font-weight: 500;
@@ -170,7 +251,18 @@ color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
 }
-
+.cards-title {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 72px; 
+}
+.card-title .item {
+  width: 360px;
+  margin-bottom: 48px;
+}
+.cards-title .item:nth-child(3n) {
+  margin-right: 0px;
+}
 .cards-title .cards-head  {
 font-weight: 500;
 font-size: 20px;
@@ -190,11 +282,15 @@ color: var(--secondary-color-text)
 .footer {
   background-color: var(--secondary-color-text);
   color: var(--secondary-background);
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 .footer .footer-text {
   color: var(--secondary-background);
   font-size: 16px;
   line-height: 1.5;
+  margin-top: 16px;
+  
 }
 .footer-logo {
   font-family: var(--secondary-font);
