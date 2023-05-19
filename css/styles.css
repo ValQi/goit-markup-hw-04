@@ -50,6 +50,9 @@ img {
   display: block;
 }
 /* Header */
+.header {
+  border-bottom: 1px solid #e7e9fc
+}
 .header-all {
   display: flex;
 }
@@ -66,8 +69,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--primary-brand);
+  margin-right: 76px;
 }
 .nav-logo {
   color: var(--secondary-color-text)
@@ -128,7 +131,8 @@ color: var(--primary-text-color);
 /* Hero Main*/
 .hero-section {
   background-color: #2e2f42;
-  margin-bottom: 120px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-section .hero-text{
   color: #ffffff;
@@ -137,8 +141,15 @@ color: var(--primary-text-color);
   text-align: center;
   letter-spacing: 0.02em;
   padding-top: 188px;
+  max-width: 496px;
 }
 .hero-section .hero-buttom {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+
   color: #ffffff;
   background-color: #4d5ae5;
   cursor: pointer;
