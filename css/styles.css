@@ -241,6 +241,7 @@ color: var(--primary-text-color);
   background-color:var(--secondary-background);
   padding-top: 120px;
   padding-bottom: 120px;
+  border-radius: 0px 0px 4px;
 }
 .section-team .team-title {
   margin-bottom: 72px;
@@ -258,7 +259,6 @@ color: var(--primary-text-color);
   display: flex;
   gap: 24px;
   margin-bottom: 120px;
-  border-radius: 0px 0px 4px 4px;
 }
 .team-head {
   text-align: center;
