@@ -219,7 +219,6 @@ color: var(--primary-text-color);
   gap: 24px;
 }
 .features-list .item {
-  flex-wrap: wrap;
   width: calc((100% - 72px) / 4);
 }
 .example-title {
@@ -242,6 +241,8 @@ color: var(--primary-text-color);
 /* section team */
 .team-image {
   background-color: var(--background-color);
+  border-radius: 0px 0px 4px 4px;
+;
 }
 .section-team {
   background-color:var(--secondary-background);
@@ -277,7 +278,6 @@ color: var(--primary-text-color);
   
 }
 .team-text-all {
-  border-radius: 0px 0px 4px 4px;
   padding-top: 32px;
   padding-bottom: 32px; 
   padding-left: 16px; 
