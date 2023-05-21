@@ -197,7 +197,7 @@ color: var(--primary-text-color);
 }
 /* Section */
 .features-title {
-  visibility: hidden;
+  display: none
 }
 .section-features {
   padding-top: 120px;
