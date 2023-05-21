@@ -70,7 +70,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brand);
-  margin-right: 76px;
+  margin-right: 152px;
 }
 .nav-logo {
   color: var(--secondary-color-text)
@@ -79,7 +79,6 @@ img {
 .nav-menu {
   display: flex;
 
-  margin-left: 76px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -247,7 +246,6 @@ color: var(--primary-text-color);
 }
 .section-team {
   background-color:var(--secondary-background);
-  padding-top: 120px;
   padding-bottom: 120px;
   
 }
@@ -263,7 +261,6 @@ color: var(--primary-text-color);
   
 }
 .section-team .team-card {
-  background-color: var(--background-color);
   display: flex;
   gap: 24px;
   margin-bottom: 120px;
@@ -303,7 +300,6 @@ color: var(--primary-text-color);
   width: calc((100% - 48px) / 3);
 }
 .cards-title .cards-head  {
-margin-bottom: 8px;
 margin-top: 32px;
 font-weight: 500;
 font-size: 20px;
@@ -328,7 +324,7 @@ color: var(--secondary-color-text)
 /* Footer */
 .logo-footer {
   display: inline-block;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
@@ -336,7 +332,6 @@ color: var(--secondary-color-text)
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brand);
-  margin-right: 76px;
 }
 .footer {
   background-color: var(--secondary-color-text);
@@ -348,7 +343,6 @@ color: var(--secondary-color-text)
   color: var(--secondary-background);
   font-size: 16px;
   line-height: 1.5;
-  margin-top: 16px;
   max-width: 264px;
   
 }
