@@ -70,7 +70,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brand);
-  margin-right: 152px;
+  margin-right: 76px;
 }
 .nav-logo {
   color: var(--secondary-color-text)
@@ -246,6 +246,7 @@ color: var(--primary-text-color);
 }
 .section-team {
   background-color:var(--secondary-background);
+  padding-top: 120px;
   padding-bottom: 120px;
   
 }
@@ -324,7 +325,7 @@ color: var(--secondary-color-text)
 /* Footer */
 .logo-footer {
   display: inline-block;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
