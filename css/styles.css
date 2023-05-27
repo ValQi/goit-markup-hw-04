@@ -370,16 +370,24 @@ img {
   border: 1px solid var(--first-border-color);
   border-radius: 4px;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
+  fill: var(--first-border-color);
 }
 .customers-item {
   width: calc((100%-120%) / 6);
+  width: 168px;
   height: 88px;
 }
 .customers-svg {
-  width: 104px;
-  height: 56px;
+
+}
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--accent-color);
+}
+.customers-svg {
+  fill: var(--accent-color);
 }
 .cards-title {
   display: flex;
@@ -451,4 +459,30 @@ img {
 .footer-logo-web {
   color: var(--primary-brand);
   color: var(--secondary-background);
+}
+.social-med {
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.social-item:not(:last-child) {
+  
+}
+.social-link {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-brand);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: #31d0aa;
+}
+.social-svg {
+  fill: var(--secondary-background);
 }
