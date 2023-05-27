@@ -460,15 +460,15 @@ img {
   color: var(--primary-brand);
   color: var(--secondary-background);
 }
-.social-med {
+.social-text {
+  display: flex;
+  justify-content: center;
+  
 }
 .social-list {
   display: flex;
   justify-content: center;
   gap: 16px;
-}
-.social-item:not(:last-child) {
-  
 }
 .social-link {
   display:flex;
