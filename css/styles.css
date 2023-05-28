@@ -287,7 +287,7 @@ img {
 .section-team {
   background-color: var(--secondary-background);
   padding-top: 120px;
-  padding-bottom: 120px;
+    padding-bottom: 120px;
 }
 .section-team .team-title {
   margin-bottom: 72px;
@@ -360,7 +360,6 @@ img {
   line-height: 1.11;
   color: var(--secondary-color-text);
   text-align: center;
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 .customers-list {
