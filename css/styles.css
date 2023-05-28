@@ -379,15 +379,16 @@ img {
   width: 168px;
   height: 88px;
 }
-.customers-svg {
-
+.customers-svg:hover,
+.customers-svg:focus {
+fill: var(--accent-color);
 }
 .customers-link:hover,
 .customers-link:focus {
   border-color: var(--accent-color);
 }
 .customers-svg {
-  fill: var(--accent-color);
+  fill: #8E8F99;
 }
 .cards-title {
   display: flex;
@@ -460,10 +461,15 @@ img {
   color: var(--primary-brand);
   color: var(--secondary-background);
 }
+.social-med {
+  margin-left: 120px;
+}
 .social-text {
-  display: flex;
-  justify-content: center;
-  
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+color: var(--background-color);
+margin-bottom: 16px;
 }
 .social-list {
   display: flex;
